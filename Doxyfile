@@ -1,0 +1,17 @@
+# Doxyfile for Resume
+PROJECT_NAME           = "Tony Nguyen Resume"
+OUTPUT_DIRECTORY       = build/doxygen
+INPUT                  = docs/resume.dox
+FILE_PATTERNS          = *.dox
+RECURSIVE              = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+
+MARKDOWN_SUPPORT       = YES
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+
+USE_MDFILE_AS_MAINPAGE =
