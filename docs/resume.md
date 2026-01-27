@@ -1,0 +1,84 @@
+# Tony Nguyen
+
+San Diego, CA | tony@tonynguyen.com | (858) 254-2222 | LinkedIn: linkedin.com/in/therealtonynguyen
+
+## ENGINEERING PLATFORM & SYSTEMS LEADER
+Engineering leader with 20+ years of experience building platform systems, developer infrastructure, and scalable engineering organizations.
+I specialize in enabling high-velocity product teams through strong engineering foundations: CI/CD transformation, API platforms, internal developer portals, observability, and resilient distributed systems.
+
+Have led global teams of 60+ engineers across ServiceNow, Intuit, and Sony, driving engineering operating models that improve delivery speed, system reliability, and developer productivity.
+Known for turning fragmented engineering practices into unified platforms that scale across organizations.
+
+## CORE STRENGTHS
+- Engineering Platform Strategy
+- SDLC & CI/CD Transformation
+- Internal Developer Platforms (IDP)
+- API Ecosystems & Gateway Architecture
+- Distributed Systems & Cloud Infrastructure
+- Developer Experience & Tooling
+- Observability & Production Readiness
+- Engineering Operating Models
+- Incident Learning & Postmortem Culture
+- Global Org Leadership (60+ Engineers)
+
+## EXPERIENCE
+
+### ServiceNow — Director of Software Engineering (San Diego, CA | 2018–Present)
+Led global engineering organization responsible for shared platforms and engineering systems used across dozens of product teams.
+
+#### UX Development & Design Systems
+- Led platform-level frontend architecture modernization, moving legacy UI frameworks to scalable, component-driven architecture using Web Components, React, and TypeScript across multiple product surfaces
+- Established reusable UI platform patterns that unified interaction models across data-heavy surfaces such as lists, task boards, and workflow-driven consoles used by millions of enterprise users
+- Drove consistency across surfaces by defining shared frontend infrastructure, state management approaches, and performance standards to ensure sustainable architecture at scale
+- Partnered with platform and API teams to align frontend architecture with service-layer contracts, enabling scalable integration patterns and consistent data-fetching models across applications
+- Led development of a cross-product design system with reusable, configurable UI components and accessibility standards, enabling teams to deliver features faster while maintaining visual and interaction consistency
+- Built extensible component libraries that supported customization at product level while preserving platform coherence, reducing duplication and long-term maintenance costs
+- Championed performance optimization and rendering efficiency initiatives across the UI platform, improving load times and runtime responsiveness for high-density enterprise interfaces
+
+#### Engineering Platform & Infrastructure
+- Led SDLC and CI/CD modernization enabling transition from biannual releases to continuous delivery with weekly production deployments
+- Established platform infrastructure patterns and governance used across 60+ engineering teams
+- Implemented Kong API Gateway and drove API governance strategy for internal and external platform services
+- Defined and led Internal Developer Platform (IDP) strategy including Dev Portal architecture, access models, and API onboarding workflows
+- Built distributed platform services supporting payments APIs and downstream PSP integrations using AWS, Confluent Cloud (Kafka), Redis, and Postgres
+- Partnered with SRE and platform teams to standardize observability practices using Grafana, structured logging, and system-level metrics
+
+#### Developer Experience & Platform Scale
+- Delivered reusable platform capabilities that improved authentication patterns, API integration consistency, and frontend/backend interoperability
+- Standardized engineering tooling, workflows, and release governance across global teams, reducing integration failures and improving deployment confidence
+- Introduced automated quality gates and post-deployment monitoring into engineering lifecycle
+
+#### Operational Excellence
+- Stood up centralized Support & Engineering response organization aligned with product teams
+- Designed and institutionalized structured RCA and postmortem process to improve production learning loops and system resilience
+- Reduced cross-team delivery friction by defining unified engineering operating model and release governance
+
+*Previously: Senior Engineering Manager — led large-scale UI platform modernization and experimentation frameworks supporting millions of enterprise users.*
+
+### Intuit — Senior Development Manager, TurboTax Platform (San Diego, CA | 2016–2018)
+- Directed replatforming of legacy tax systems and tooling to AWS cloud infrastructure
+- Led development of internal IDE and engineering tools improving developer productivity and system maintainability
+- Introduced modern frontend and developer tooling into production workflows
+- Drove experimentation frameworks using feature flags and A/B testing for workflow optimization
+- Partnered cross-functionally with Product, Design, and Data teams to improve engineering velocity and system consistency
+
+### Sony PlayStation Network — Engineering Manager (San Diego, CA | 2014–2016)
+- Designed and delivered entitlement services in C++ and Java supporting global digital content systems
+- Built distributed workflows for publishing games and media into PlayStation Network ecosystem
+- Collaborated with first-party studios and external partners on PSN platform integrations
+- Developed engineering career ladders and mentoring frameworks
+
+### Earlier Experience — MIR3, Inc. (Director of Software Engineering)
+Led engineering organization for mission-critical SaaS notification platform, introducing CI/CD pipelines and modern Agile processes across a 40-person org.
+
+## TECHNOLOGIES
+- Cloud & Infrastructure: AWS, API Gateways, Kafka (Confluent), Redis, Postgres
+- Engineering Systems: CI/CD pipelines, Dev Portals, Observability (Grafana), SDLC governance
+- Languages: Java, Go, JavaScript, TypeScript
+- Frameworks: React, Node.js, Web Components
+- Tooling: Git, Jira, Confluence
+
+## EDUCATION & CERTIFICATIONS
+- Computer Science & Psychology — UC San Diego
+- Certified Scrum Master
+- PMI Agile Certified Practitioner (PMI-ACP)
