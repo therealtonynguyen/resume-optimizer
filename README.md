@@ -1,6 +1,6 @@
 # resume optimizer
 
-Resume-as-code for Tony Nguyen.
+Resume-as-code.
 
 ## What’s in here
 - `docs/resume.md` — **Edit this file** to update your resume (Markdown format, easy to edit/diff)
