@@ -2,16 +2,19 @@
 """
 Generate a clean PDF from docs/resume.md (headings + bullets + paragraphs).
 """
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
+from config_loader import get_path, get_output_filename
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "docs" / "resume.md"
-OUTDIR = ROOT / "build"
+SRC = get_path('resume_source')
+OUTDIR = get_path('build_dir')
 OUTDIR.mkdir(parents=True, exist_ok=True)
-OUT = OUTDIR / "Tony_Nguyen_Resume.pdf"
+OUT = OUTDIR / get_output_filename('baseline_pdf')
 
 LEFT = 0.75 * inch
 RIGHT = 0.75 * inch

@@ -3,3 +3,10 @@ build/
 
 # macOS
 .DS_Store
+
+# API Keys and Secrets
+# Never commit API keys - use environment variables or secrets.yaml
+.env
+.env.local
+*.key
+config/secrets.yaml  # Local secrets file (not committed)

@@ -2,14 +2,17 @@
 """
 Generate DOCX from docs/resume.md
 """
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
 from docx import Document
+from config_loader import get_path, get_output_filename
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "docs" / "resume.md"
-OUTDIR = ROOT / "build"
+SRC = get_path('resume_source')
+OUTDIR = get_path('build_dir')
 OUTDIR.mkdir(parents=True, exist_ok=True)
-OUT = OUTDIR / "Tony_Nguyen_Resume.docx"
+OUT = OUTDIR / get_output_filename('baseline_docx')
 
 def main():
     lines = SRC.read_text(encoding="utf-8").splitlines()

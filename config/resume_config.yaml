@@ -1,0 +1,81 @@
+# Resume Configuration
+# Central configuration for resume building and optimization
+
+# Personal Information (used for file naming)
+name: "Tony_Nguyen"  # Used in output file names (use underscores, no spaces)
+
+# Output file patterns
+# These patterns are used when generating DOCX and PDF files
+# Available variables: {name}, {timestamp}, {company}, {job_title}
+output_patterns:
+  baseline_docx: "{name}_Resume.docx"  # Baseline resume DOCX
+  baseline_pdf: "{name}_Resume.pdf"     # Baseline resume PDF
+  optimized_resume: "resume_optimized_{timestamp}.md"  # Optimized resume markdown
+  optimized_cover_letter: "cover_letter_{timestamp}.md"  # Cover letter markdown
+  optimized_docx: "{name}_Resume_{company}_{timestamp}.docx"  # Optimized resume DOCX (if company provided)
+  optimized_pdf: "{name}_Resume_{company}_{timestamp}.pdf"  # Optimized resume PDF (if company provided)
+  # Fallback if company not provided
+  optimized_docx_fallback: "{name}_Resume_optimized_{timestamp}.docx"
+  optimized_pdf_fallback: "{name}_Resume_optimized_{timestamp}.pdf"
+
+# File paths (relative to project root)
+paths:
+  resume_source: "docs/resume.md"  # Baseline resume markdown (source of truth)
+  resume_dox: "docs/resume.dox"    # Generated Doxygen file
+  build_dir: "build"               # Build output directory
+  optimized_dir: "build/optimized"  # Optimized resume outputs
+  changelog: "CHANGELOG.md"         # Changelog file
+
+# AI Prompt Configuration for Resume Optimization
+ai_prompts:
+  # Main system prompt for resume optimization
+  resume_optimization_prompt: |
+    You are an expert resume writer and career coach specializing in optimizing resumes for:
+    1. ATS (Applicant Tracking Systems) and AI recruiting filters
+    2. Human recruiters and hiring managers
+    3. Technical screening processes
+    
+    Your task is to analyze the provided job description and optimize the resume to maximize the candidate's chances of landing an interview.
+    
+    Guidelines:
+    - Match keywords and phrases from the job description naturally throughout the resume
+    - Emphasize relevant skills, technologies, and experiences that align with the role
+    - Maintain authenticity - don't fabricate experience or skills
+    - Optimize bullet points to highlight quantifiable achievements and impact
+    - Ensure the resume is scannable and ATS-friendly
+    - Preserve the original structure and formatting style
+    - Focus on achievements and outcomes, not just responsibilities
+
+  # Cover letter generation prompt
+  cover_letter_prompt: |
+    Write a professional, compelling 2-3 paragraph cover letter for this role.
+    
+    Requirements:
+    - First paragraph: Express genuine interest in the role and company
+    - Second paragraph: Highlight 2-3 key qualifications/experiences that make the candidate a strong fit
+    - Third paragraph (optional): Closing statement with enthusiasm and call to action
+    - Keep it concise, authentic, and tailored to the specific role
+    - Use a professional but personable tone
+    - Avoid generic phrases - be specific about why this role is a good fit
+
+  # Instructions for changelog generation
+  changelog_instructions: |
+    Generate a clear, concise list of changes made to the resume. Format as a bulleted list.
+    Focus on:
+    - Keyword additions/optimizations
+    - Content enhancements (new bullets, rephrased sections)
+    - Structural changes (if any)
+    - Skill/technology emphasis adjustments
+    Each change should be specific and actionable.
+
+  # Provider configuration
+  provider: "ollama"  # Options: ollama (FREE), gemini (FREE), groq (FREE), openai (paid), huggingface (FREE)
+  
+  # Model configuration (provider-specific)
+  model: "llama3.2"  # Model name (varies by provider)
+  temperature: 0.7  # Controls creativity (0.0-1.0, lower = more focused)
+  max_tokens: 8000  # Maximum response length (increased for longer resumes)
+  
+  # Provider-specific settings
+  ollama_base_url: "http://localhost:11434"  # Ollama server URL (if using Ollama)
+  ollama_model: "llama3.2"  # Ollama model to use
