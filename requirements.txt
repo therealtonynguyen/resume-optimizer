@@ -1,2 +1,16 @@
 python-docx>=1.1.0
 reportlab>=4.0.0
+requests>=2.31.0
+pyyaml>=6.0
+
+# AI Provider dependencies (install only what you need)
+# OpenAI (paid, but high quality) - optional
+# openai>=1.0.0
+
+# Groq (free tier available, very fast) - optional
+# groq>=0.4.0
+
+# Note: Ollama, Gemini, and Hugging Face use requests (already installed)
+# Ollama: Install locally from https://ollama.ai (no Python package needed)
+# Gemini: Uses requests library (already installed)
+# Hugging Face: Uses requests library (already installed)
